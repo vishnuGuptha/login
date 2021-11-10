@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div id = "appContainer" class="pt-3">
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.mobile}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>
